@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programador de Sistemas — UC2 · Slides</title>
+<meta name="description" content="Slides da UC2 (Implementar Banco de Dados) do curso Programador de Sistemas, Senac RS.">
+<style>
+  :root { color-scheme: dark light; --bg:#0b0d12; --card:#12151d; --line:#242a38; --fg:#e7eaf2; --dim:#9aa3b8; --accent:#38bdf8; }
+  @media (prefers-color-scheme: light) { :root { --bg:#fbfbfd; --card:#fff; --line:#e1e5ee; --fg:#131722; --dim:#525a6e; --accent:#0284c7; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; }
+  .wrap { max-width:860px; margin-inline:auto; padding:56px 20px 80px; }
+  h1 { font-size:clamp(1.8rem,4vw,2.4rem); letter-spacing:-.02em; margin:0 0 6px; }
+  .sub { color:var(--dim); margin:0 0 8px; }
+  .plano { margin:0 0 32px; }
+  a { color:inherit; text-decoration:none; }
+  .plano a, .back a { color:var(--accent); }
+  ol { list-style:none; margin:0; padding:0; display:grid; gap:10px; }
+  li a { display:flex; gap:14px; align-items:baseline; flex-wrap:wrap; padding:14px 16px; background:var(--card); border:1px solid var(--line); border-radius:12px; transition:border-color .15s ease; }
+  li a:hover { border-color:var(--accent); }
+  .n { font:500 .78rem/1 'JetBrains Mono',ui-monospace,monospace; color:var(--dim); min-width:2.4em; }
+  .t { font-weight:600; }
+  .s { color:var(--dim); font-size:.92rem; flex:1 1 100%; margin-left:3.4em; }
+  .d { font:400 .78rem/1 'JetBrains Mono',ui-monospace,monospace; color:var(--dim); margin-left:auto; }
+  .back { margin-top:40px; color:var(--dim); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Programador de Sistemas · UC2</h1>
+  <p class="sub">Implementar Banco de Dados — Senac RS. 19 aulas, slides em HTML.</p>
+  <p class="plano"><a href="UC2/plano-de-ensino.html">Plano de ensino da UC2 →</a></p>
+  <p class="plano"><a href="materiais.html">Arquivos e links →</a></p>
+  <ol>
+    <li><a href="UC2/aula-00-apresentacao/slides.html">
+      <span class="n">00</span>
+      <span class="t">Implementar Banco de Dados</span>
+      <span class="d">06/10/2026</span>
+      <span class="s">Bem-vindo(a) à UC2!</span>
+    </a></li>
+    <li><a href="UC2/aula-01/slides.html">
+      <span class="n">01</span>
+      <span class="t">O que é um Sistema Gerenciador de Banco de Dados</span>
+      <span class="d">06/10/2026</span>
+      <span class="s">Aula 01 — Fundamentos</span>
+    </a></li>
+    <li><a href="UC2/aula-02/slides.html">
+      <span class="n">02</span>
+      <span class="t">Abstração de Dados</span>
+      <span class="d">07/10/2026</span>
+      <span class="s">Aula 02 — Esquema, instância e níveis de um SGBD</span>
+    </a></li>
+    <li><a href="UC2/aula-03/slides.html">
+      <span class="n">03</span>
+      <span class="t">Do Problema ao Modelo</span>
+      <span class="d">08/10/2026</span>
+      <span class="s">Aula 03 — Estudo de caso (minimundo)</span>
+    </a></li>
+    <li><a href="UC2/aula-04/slides.html">
+      <span class="n">04</span>
+      <span class="t">Atributos</span>
+      <span class="d">09/10/2026</span>
+      <span class="s">Aula 04 — Qualificando cada entidade</span>
+    </a></li>
+    <li><a href="UC2/aula-05/slides.html">
+      <span class="n">05</span>
+      <span class="t">Chaves e Cardinalidades</span>
+      <span class="d">14/10/2026</span>
+      <span class="s">Aula 05 — Identificando e ligando</span>
+    </a></li>
+    <li><a href="UC2/aula-06/slides.html">
+      <span class="n">06</span>
+      <span class="t">Do MER ao DER</span>
+      <span class="d">15/10/2026</span>
+      <span class="s">Aula 06 — Desenhando o modelo</span>
+    </a></li>
+    <li><a href="UC2/aula-07/slides.html">
+      <span class="n">07</span>
+      <span class="t">Do DER às Tabelas</span>
+      <span class="d">16/10/2026</span>
+      <span class="s">Aula 07 — Modelo relacional</span>
+    </a></li>
+    <li><a href="UC2/aula-08/slides.html">
+      <span class="n">08</span>
+      <span class="t">Dependências Funcionais</span>
+      <span class="d">19/10/2026</span>
+      <span class="s">Aula 08 — Quem determina quem</span>
+    </a></li>
+    <li><a href="UC2/aula-09/slides.html">
+      <span class="n">09</span>
+      <span class="t">Normalização</span>
+      <span class="d">20/10/2026</span>
+      <span class="s">Aula 09 — 1FN, 2FN e 3FN</span>
+    </a></li>
+    <li><a href="UC2/aula-10/slides.html">
+      <span class="n">10</span>
+      <span class="t">PostgreSQL e pgAdmin</span>
+      <span class="d">21/10/2026</span>
+      <span class="s">Aula 10 — Do papel para o banco de verdade</span>
+    </a></li>
+    <li><a href="UC2/aula-11/slides.html">
+      <span class="n">11</span>
+      <span class="t">Constraints e Relacionamentos</span>
+      <span class="d">22/10/2026</span>
+      <span class="s">Aula 11 — Ligando as tabelas de verdade</span>
+    </a></li>
+    <li><a href="UC2/aula-12/slides.html">
+      <span class="n">12</span>
+      <span class="t">DML e Primeira Conexão em Python</span>
+      <span class="d">23/10/2026</span>
+      <span class="s">Aula 12 — Colocando dados dentro do banco</span>
+    </a></li>
+    <li><a href="UC2/aula-13/slides.html">
+      <span class="n">13</span>
+      <span class="t">Consultando Dados</span>
+      <span class="d">26/10/2026</span>
+      <span class="s">Aula 13 — SELECT, WHERE e ORDER BY</span>
+    </a></li>
+    <li><a href="UC2/aula-14/slides.html">
+      <span class="n">14</span>
+      <span class="t">JOIN e Agregações</span>
+      <span class="d">27/10/2026</span>
+      <span class="s">Aula 14 — Cruzando tabelas e resumindo dados</span>
+    </a></li>
+    <li><a href="UC2/aula-15/slides.html">
+      <span class="n">15</span>
+      <span class="t">Subconsultas, Views e o CRUD em Python</span>
+      <span class="d">28/10/2026</span>
+      <span class="s">Aula 15 — Montando as 4 operações</span>
+    </a></li>
+    <li><a href="UC2/aula-16/slides.html">
+      <span class="n">16</span>
+      <span class="t">Usuários e Permissões</span>
+      <span class="d">29/10/2026</span>
+      <span class="s">Aula 16 — Quem pode ver e mudar o quê</span>
+    </a></li>
+    <li><a href="UC2/aula-17/slides.html">
+      <span class="n">17</span>
+      <span class="t">Backup e Restore</span>
+      <span class="d">30/10/2026</span>
+      <span class="s">Aula 17 — Não perder os dados nunca</span>
+    </a></li>
+    <li><a href="UC2/aula-18/slides.html">
+      <span class="n">18</span>
+      <span class="t">Entrega do CRUD Completo</span>
+      <span class="d">03/11/2026</span>
+      <span class="s">Aula 18 — Fechamento da UC2</span>
+    </a></li>
+  </ol>
+  <p class="back">← <a href="https://andersongacfilho.github.io/teaching">andersongacfilho.github.io</a></p>
+</main>
+</body>
+</html>
